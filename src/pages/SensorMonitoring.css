@@ -1,0 +1,271 @@
+/* src/pages/SensorMonitoring.css */
+
+.sensor-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: calc(100vh - 140px);
+  overflow: hidden;
+}
+
+/* Header & Filters */
+.sensor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(4, 18, 10, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 16px;
+  padding: 20px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sensor-header h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sensor-header h2::before {
+  content: '';
+  width: 4px;
+  height: 28px;
+  background: linear-gradient(180deg, #10b981, #fbbf24);
+  border-radius: 2px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #8B9A8B;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(251, 191, 36, 0.2) 100%);
+  border-color: #fbbf24;
+  color: #fbbf24;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+}
+
+/* Sensor Grid */
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+/* Sensor Card - Professional Design */
+.sensor-card {
+  background: linear-gradient(135deg, rgba(4, 18, 10, 0.7) 0%, rgba(16, 185, 129, 0.05) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.sensor-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #fbbf24);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.sensor-card:hover::before {
+  opacity: 1;
+}
+
+.sensor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3),
+              0 0 30px rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Warning State - Elegant Alert */
+.sensor-card.warning {
+  border-color: rgba(239, 68, 68, 0.4);
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.15),
+              0 0 30px rgba(239, 68, 68, 0.1);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(4, 18, 10, 0.7) 100%);
+}
+
+.sensor-card.warning::before {
+  background: linear-gradient(90deg, #ef4444, #fbbf24);
+  opacity: 1;
+}
+
+.sensor-card.warning:hover {
+  box-shadow: 0 12px 40px rgba(239, 68, 68, 0.25),
+              0 0 40px rgba(239, 68, 68, 0.2);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sensor-info {
+  flex: 1;
+}
+
+.sensor-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.sensor-zone {
+  font-size: 0.85rem;
+  color: #8B9A8B;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.sensor-zone::before {
+  content: '';
+  font-size: 0.8rem;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.status-normal {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.status-warning {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.3);
+  animation: pulse-warning 2s infinite;
+}
+
+@keyframes pulse-warning {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.current-reading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.reading-value {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fbbf24; /* Amber for prominence */
+  line-height: 1;
+  text-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
+  font-family: 'Courier New', monospace;
+}
+
+.reading-unit {
+  font-size: 1.1rem;
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+/* Chart Container */
+.chart-container {
+  height: 160px;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Scrollbar */
+.sensor-grid::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.sensor-grid::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.sensor-grid::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 10px;
+}
+
+.sensor-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+.location-icon {
+  width: 12px;
+  height: 12px;
+  background: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+
+.recharts-tooltip-wrapper {
+  z-index: 100 !important;
+}
