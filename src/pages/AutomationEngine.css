@@ -1,0 +1,182 @@
+/* src/pages/AutomationEngine.css */
+
+.automation-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: calc(100vh - 134px);
+}
+
+/* Left Side: Rule Builder */
+.rule-builder-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-card {
+  background: rgba(26, 59, 47, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.section-card h2 {
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 12px;
+}
+
+/* Form Styles */
+.rule-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  color: #a5d6a7;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form-group select {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.form-group select:focus {
+  border-color: #4CAF50;
+}
+
+.add-rule-btn {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 42px;
+}
+
+.add-rule-btn:hover {
+  background: #388E3C;
+  transform: translateY(-2px);
+}
+
+/* Rules List */
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.rule-item {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rule-text {
+  color: #e0e8e0;
+  font-size: 0.95rem;
+}
+
+.rule-text strong {
+  color: #4CAF50;
+}
+
+.rule-status {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Right Side: Terminal Activity Log */
+.terminal-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-window {
+  background: #050a08; /* Very dark, almost black */
+  border: 1px solid #1a3b2f;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.terminal-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #1a3b2f;
+  padding-bottom: 12px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27c93f; }
+
+.terminal-title {
+  color: #4CAF50;
+  font-size: 0.9rem;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+.log-entry {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.log-time {
+  color: #555;
+  margin-right: 8px;
+}
+
+.log-info { color: #a5d6a7; }
+.log-warning { color: #ffbd2e; }
+.log-success { color: #4CAF50; font-weight: bold; }
+.log-error { color: #ff5f56; font-weight: bold; }
