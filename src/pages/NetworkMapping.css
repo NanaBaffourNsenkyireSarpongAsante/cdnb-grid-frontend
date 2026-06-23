@@ -7,9 +7,9 @@
 }
 
 .map-container {
-  background: rgba(26, 59, 47, 0.4);
+  background: rgba(42, 110, 57, 0.671);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 0px solid rgba(43, 126, 57, 0.801);
   border-radius: 16px;
   padding: 16px;
   display: flex;
@@ -43,9 +43,9 @@
 }
 
 .data-card {
-  background: rgba(26, 59, 47, 0.6);
+  background: rgba(42, 110, 57, 0.671);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 0px solid rgba(43, 126, 57, 0.801);
   border-radius: 12px;
   padding: 20px;
 }

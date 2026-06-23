@@ -5,7 +5,7 @@ import './RemainingModules.css';
 const SecuritySystem = () => {
   return (
     <div className="module-page">
-      <div className="module-header"><h2>🛡️ Security System</h2></div>
+      <div className="module-header"><h2> Security System</h2></div>
       <div className="grid-2">
         <div className="card">
           <h3>Recent Alerts</h3>
