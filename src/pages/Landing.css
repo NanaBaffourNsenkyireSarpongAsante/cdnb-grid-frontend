@@ -18,15 +18,15 @@ body {
   width: 100%;
   padding: 16px 0;
   z-index: 1000;
-  background: rgba(26, 59, 47, 0.7);
-  backdrop-filter: blur(16px);
+  background: rgba(3, 5, 88, 0.918) ;
+  backdrop-filter: (16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(20, 32, 151);
 }
 
 
 .nav-container {
-  width: 90%; /* Stretches to 90% of the screen */
+  width: 90%; /* Stretches to 90% of the screen rgba(26, 59, 47, 0.7) */
   max-width: 1400px; /* Stops stretching on huge monitors */
   margin: 0 auto; /* Keeps it perfectly centered */
   padding: 0 24px;
@@ -49,21 +49,21 @@ body {
 }
 
 .nav-links a {
-  color: #e0e8e0;
+  color: #e3e5f1;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #4CAF50;
+  color: rgba(26, 60, 255, 0.85);
 }
 
 .login-btn {
-  background: rgba(76, 175, 80, 0.85);
+  background: rgba(26, 60, 255, 0.85);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 0px solid;
   color: white !important;
   padding: 8px 24px;
   border-radius: 8px;
@@ -94,8 +94,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+  background: rgba(8, 7, 7, 0.418);
+  backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
@@ -103,8 +103,8 @@ body {
 
 
 .hero-content {
-  width: 90%; /* Stretches to 90% of the screen */
-  max-width: 1400px; 
+  width: 90%; /* Stretches to 90% of the screen   rgba(0, 0, 0, 0.5);*/
+  max-width: 1000px; 
   margin: 0 auto;
   padding: 48px 56px;
   position: relative;
@@ -112,9 +112,9 @@ body {
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 24px;
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(29, 134, 29, 0.144);
+  border-radius: 20px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.233);
 }
 
 .hero-title {
@@ -192,18 +192,18 @@ body {
 }
 
 /* ============================================
-   FEATURES SECTION - Glass Effect
+   FEATURES SECTION - Glass Effect   rgba(245, 240, 232, 0.6);
    ============================================ */
 .features {
   padding: 80px 0;
-  background: rgba(245, 240, 232, 0.6);
+  background: rgba(38, 51, 105, 0.87);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
 
 .container {
-  width: 90%; /* Stretches to 90% of the screen */
+  width: 85%; /* Stretches to 90% of the screen */
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
@@ -211,7 +211,7 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #1a3b2f;
+  color: #d3e0db;
   margin-bottom: 48px;
 }
 
@@ -226,8 +226,8 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 32px 24px;
-  border-radius: 16px;
+  padding: 22px 24px;
+  border-radius: 50px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -260,7 +260,7 @@ body {
    ============================================ */
 .stats-preview {
   padding: 80px 0;
-  background: rgba(26, 59, 47, 0.85);
+  background: rgba(1, 7, 63, 0.85);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -287,9 +287,9 @@ body {
 }
 
 .stat-card:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background:#388e3c9c  
 }
-
+/*  rgba(49, 136, 46, 0.137);*/
 .stat-label {
   color: #a5d6a7;
   font-size: 0.9rem;
@@ -355,7 +355,7 @@ body {
    FOOTER - Glass Effect
    ============================================ */
 .footer {
-  background: rgba(13, 31, 24, 0.9);
+  background: linear-gradient(135deg, #090435, #0a0f4d);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-top: 1px solid rgba(255, 255, 255, 0.05);

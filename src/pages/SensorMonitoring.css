@@ -15,7 +15,7 @@
   align-items: center;
   background: rgba(4, 18, 10, 0.7);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 0px solid rgba(16, 185, 129, 0.2);
   border-radius: 16px;
   padding: 20px 28px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -35,7 +35,7 @@
 .sensor-header h2::before {
   content: '';
   width: 4px;
-  height: 28px;
+  height: 88px;
   background: linear-gradient(180deg, #10b981, #fbbf24);
   border-radius: 2px;
 }
@@ -48,7 +48,7 @@
 
 .filter-btn {
   background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 0px solid rgba(16, 185, 129, 0.2);
   color: #8B9A8B;
   padding: 10px 20px;
   border-radius: 10px;
@@ -80,14 +80,14 @@
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
   overflow-y: auto;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 /* Sensor Card - Professional Design */
 .sensor-card {
   background: linear-gradient(135deg, rgba(4, 18, 10, 0.7) 0%, rgba(16, 185, 129, 0.05) 100%);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 0px solid rgba(16, 185, 129, 0.2);
   border-radius: 16px;
   padding: 24px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

@@ -15,9 +15,9 @@
 }
 
 .section-card {
-  background: rgba(26, 59, 47, 0.6);
+  background: rgba(66, 165, 63, 0.6);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 0px solid rgba(83, 216, 57, 0.76);
   border-radius: 12px;
   padding: 24px;
 }
@@ -66,7 +66,7 @@
 }
 
 .add-rule-btn {
-  background: #4CAF50;
+  background: #0d7510;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -92,7 +92,7 @@
 
 .rule-item {
   background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(76, 175, 80, 0.2);
+  border: 0px solid rgba(76, 175, 80, 0.2);
   border-radius: 8px;
   padding: 16px;
   display: flex;
@@ -126,7 +126,7 @@
 
 .terminal-window {
   background: #050a08; /* Very dark, almost black */
-  border: 1px solid #1a3b2f;
+  border: 0px solid #1a3b2f;
   border-radius: 12px;
   padding: 20px;
   flex: 1;

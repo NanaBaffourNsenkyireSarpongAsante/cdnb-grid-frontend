@@ -3,7 +3,7 @@
 .dashboard-shell {
   display: flex;
   min-height: 100vh;
-  background: #0d1f18; /* Very dark forest green background */
+  background: rgb(12, 12, 75); /* #0d1f18 Very dark forest green background */
   color: #e0e8e0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -13,7 +13,7 @@
    ============================================ */
 .sidebar {
   width: 260px;
-  background: rgba(26, 59, 47, 0.7);
+  background: white;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-right: 1px solid rgba(255, 255, 255, 0.08);
@@ -27,16 +27,16 @@
 }
 
 .sidebar-logo {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 700;
-  color: #fff;
+  color: #010552;
   margin-bottom: 32px;
   padding: 0 12px;
   letter-spacing: 1px;
 }
 
 .sidebar-logo span {
-  color: #4CAF50;
+  color: #010555;
 }
 
 .sidebar-nav {
@@ -52,7 +52,7 @@
   gap: 12px;
   padding: 12px 16px;
   border-radius: 10px;
-  color: #a5d6a7;
+  color: #053f07;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -61,12 +61,12 @@
 
 .nav-item:hover {
   background: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  color: #104112;
 }
 
 .nav-item.active {
-  background: rgba(76, 175, 80, 0.2);
-  color: #4CAF50;
+  background: rgba(3, 4, 82, 0.959);
+  color: white;
   border: 1px solid rgba(76, 175, 80, 0.3);
 }
 
@@ -83,7 +83,7 @@
 /* Top Navbar */
 .top-navbar {
   height: 70px;
-  background: rgba(26, 59, 47, 0.5);
+  background: linear-gradient(135deg, #090435, #0a0f4d);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
