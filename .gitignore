@@ -1,2 +1,5 @@
 node_modules/
 .env
+
+# SQLite runtime data (sensor readings) — lives outside git
+cdnb-1/main/server/data/
