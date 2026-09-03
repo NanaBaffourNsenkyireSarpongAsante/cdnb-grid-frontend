@@ -269,3 +269,102 @@
 .recharts-tooltip-wrapper {
   z-index: 100 !important;
 }
+/* ── Live/Offline indicator + storage footer (SQLite-backed data) ── */
+.sensor-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sensor-header-left h2 {
+  margin: 0;
+}
+
+.live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.live-indicator.online {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.live-indicator.offline {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+
+.live-indicator.online .live-dot {
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.9);
+}
+
+.live-indicator.offline .live-dot {
+  background: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.9);
+  animation: none;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.reading-updated {
+  font-size: 0.7rem;
+  color: rgba(167, 243, 208, 0.55);
+  font-family: 'Courier New', monospace;
+  align-self: flex-end;
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+
+.api-banner {
+  background: rgba(251, 191, 36, 0.08);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 0.85rem;
+  font-family: 'Courier New', monospace;
+}
+
+.api-banner code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.storage-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(167, 243, 208, 0.7);
+  font-size: 0.78rem;
+  font-family: 'Courier New', monospace;
+  padding: 10px 18px;
+  background: rgba(4, 18, 10, 0.7);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
